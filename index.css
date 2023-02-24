@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.timer {
+    font-size: 5.5vw;
+    font-family: 'Poppins', sans-serif;
+    color: orange;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    align-items: center;
+    width: 35%;
+}
+.clockColon {
+    text-align: center;
+}
+
+.controller {
+    grid-row-start:2;
+}
+.buttons {
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 8vh;
+    font-size: 4vw;
+}
+.lap-reset-button {
+    float: left;
+    width: 7vw;
+    height: 7vw;
+    border:none;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lap-reset-button {
+    float: left;
+    width: 6.2vw;
+    height: 6.2vw;
+    border: 3px solid black;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background-color: transparent;
+}
+.start-stop-button {
+    float: right;
+    width: 7vw;
+    height: 7vw;
+    border:none;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start-stop-button {
+    float: right;
+    width: 6.2vw;
+    height: 6.2vw;
+    border: 3px solid black;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background-color: transparent;
+}
+.laps {
+    width: 40%;
+    margin: auto;
+    height: 50vh;
+    overflow: scroll;
+}
+.laps::-webkit-scrollbar{
+    display: none;
+}
+.lap {
+    margin: auto;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: wheat;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
