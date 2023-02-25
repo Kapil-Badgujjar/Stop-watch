@@ -54,7 +54,21 @@ function stopTimer(){
 }
 
 function resetApp(){
-    history.go(0);
+    _10miliSeconds = 0;
+    box3=0;
+    box2=0;
+    box1=0;
+    counter=1;
+    b3.innerHTML="0"+box3;
+    b2.innerHTML="0"+box2;
+    b1.innerHTML="0"+box1;
+    btn2.innerHTML="Start";
+    btn1.removeEventListener("click",resetApp);
+    btn1.innerHTML="Lap";
+    let lapsArea = document.getElementById("lapArea");
+    lapsArea.innerHTML="";
+    let temp = document.createElement("hr");
+    lapsArea.appendChild(temp);
 }
 function addLap(){
     console.log("Hello I am Here");
